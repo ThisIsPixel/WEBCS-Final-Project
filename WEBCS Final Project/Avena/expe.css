@@ -1,0 +1,178 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1E1E1E;
+    color: white;
+}
+
+
+header {
+    background-color: #00739f;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  .logo-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+  
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-center {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-grow: 1;
+}
+
+.nav-center li {
+    display: inline-block;
+}
+
+.nav-center li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-center li a:hover {
+    color: #ffeb3b;
+}
+
+.nav-right {
+    list-style: none;
+}
+
+.nav-right li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-right li a:hover {
+    color: #ffeb3b;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.profile-picture {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    MARGIN-RIGHT: 30px;
+  }
+ 
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #b0b0b0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-right {
+    max-width: 600px;
+}
+
+.about-right h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.about-right h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-right .highlight {
+    color: #ffeb3b;
+}
+
+.about-right p {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.works-btn {
+    background-color: #ffeb3b;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.works-btn:hover {
+    background-color: #e0c200;
+}
+
+@media (max-width: 768px) {
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-left {
+        margin-bottom: 30px;
+    }
+
+    .about-right {
+        text-align: center;
+    }
+    
+}

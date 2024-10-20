@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web Developer Portfolio</title>
+    <link rel="stylesheet" href="expe.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo" class="logo-img">
+                PIXEL
+            </div>
+            <nav>
+                <ul class="nav-center">
+                    <li><a href="home.html">Profile</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="works.html">Works</a></li>
+                </ul>
+                <ul class="nav-right">
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="about-section">
+                <div class="profile-picture">
+                    <div class="circle"><img src="img/pic.jpg"></div>
+                  </div>
+            <div class="about-right">
+                <h2>About <span class="highlight">Me</span></h2>
+                <h1>Web <span class="highlight">Developer</span></h1>
+                <p>During my time in grade 11 and 12, I took ICT with a specialization on mobile applications to start my technological career. This early experience laid the groundwork for my interest for programming. Now, as a second-year Computer Science student in college, I'm honing my skills, especially in web programming. My experience has been self-directed, with me studying from a variety of online resources, allowing me to develop a strong grasp of web technology and design.
+                </p>
+                <a href="works.html"> <button class="works-btn">Works</button></a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        
+        document.querySelector('.works-btn').addEventListener('click', () => {
+            alert('Redirecting to Works Page...');
+            
+        });
+        </script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: white;
+  }
+  
+  header {
+    background-color: #00739f;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  .logo-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+  
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-center {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-grow: 1;
+}
+
+.nav-center li {
+    display: inline-block;
+}
+
+.nav-center li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-center li a:hover {
+    color: #ffeb3b;
+}
+
+.nav-right {
+    list-style: none;
+}
+
+.nav-right li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-right li a:hover {
+    color: #ffeb3b;
+}
+  .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #0d1b2a;
+    height: 100vh;
+  }
+  
+  .intro .content {
+    max-width: 450px;
+    margin-right: 50px;
+  }
+  
+  .intro h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+  
+  .intro h1 span {
+    color: #ffeb3b;
+  }
+  
+  .intro p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .btn {
+    background-color: #ffeb3b;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #ffc107;
+  }
+  
+  .profile-picture {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #b0b0b0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+  @media (max-width: 768px) {
+    .intro {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .intro .content {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  
+    .circle {
+      width: 200px;
+      height: 200px;
+    }
+}
+  
+  
